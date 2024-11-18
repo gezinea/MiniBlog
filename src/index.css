@@ -29,7 +29,86 @@ nav button{
 
 a:hover,
 nav button:hover{
-    color: #007bff;
+    color: #b1edff;
+}
+
+/*Styles ds forms */
+form{
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+label span{
+    margin-bottom: .3em;
+    font-weight: bold;
+    text-align: left;
+}
+
+input, 
+textarea{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.8em 0;
+    background-color: transparent;
+}
+
+.btn{
+    background-color: #00bb10;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 120px;
+}
+
+.btn.btn-dark{
+    background-color: #343a40;
+    color: white;
+    border-radius: 0;
+}
+
+.btn.btn-outline{
+    background-color: transparent;
+    border-radius: 0;
+    color: #000;
+    border: 1px solid #000;
+    padding: 7px 15px;
+}
+
+.btn:hover{
+    background-color: #019c0e;
+    color: #e7e7e7;
+}
+
+.btn.btn-outline:hover{
+    background-color: #000;
+}
+
+.btn.btn-danger:hover{
+    background-color: #dc3545;
+}
+
+button[disabled]{
+    background-color: #aaa;
+}
+
+.container .error{
+    color: #721515;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* .container{
@@ -41,14 +120,6 @@ nav button:hover{
     padding: 0;
 }
 
-.btn{
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
 
 .btn-primary{
     background-color: #007bff;
@@ -85,10 +156,7 @@ nav button:hover{
     color: black;
 }
 
-.btn-dark{
-    background-color: #343a40;
-    color: white;
-}
+
 
 .btn-outline-primary{
     border: 2px solid #007bff;
